@@ -1,30 +1,30 @@
 {
-    "name": "laravel-enso/data-export",
+    "name": "cgdsoftware/data-export",
     "description": "Structure for holding Laravel-Enso exports",
     "keywords": [
         "data-export",
-        "laravel-enso",
+        "cgdsoftware",
         "enso-exports"
     ],
-    "homepage": "https://github.com/laravel-enso/data-export",
+    "homepage": "https://github.com/cgdsoftware/data-export",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Adrian Ocneanu",
             "email": "aocneanu@gmail.com",
-            "homepage": "https://laravel-enso.com",
+            "homepage": "https://cgdsoftware.com",
             "role": "Developer"
         }
     ],
     "require": {
         "box/spout": "^3.0",
-        "laravel-enso/core": "^8.0",
-        "laravel-enso/enums": "^2.0",
-        "laravel-enso/helpers": "^2.0",
-        "laravel-enso/io": "^2.0",
-        "laravel-enso/files": "^5.0",
-        "laravel-enso/track-who": "^2.0"
+        "cgdsoftware/core": "^8.0",
+        "cgdsoftware/enums": "^2.0",
+        "cgdsoftware/helpers": "^2.0",
+        "cgdsoftware/io": "^2.0",
+        "cgdsoftware/files": "^5.0",
+        "cgdsoftware/track-who": "^2.0"
     },
     "autoload": {
         "psr-4": {
