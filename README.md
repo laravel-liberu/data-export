@@ -6,9 +6,9 @@
 [![Total Downloads](https://poser.pugx.org/laravel-enso/data-export/downloads)](https://packagist.org/packages/laravel-enso/data-export)
 [![Latest Stable Version](https://poser.pugx.org/laravel-enso/data-export/version)](https://packagist.org/packages/laravel-enso/data-export)
 
-Data Export structure dependency for [Laravel Enso](https://github.com/laravel-enso/Enso).
+Data Export structure dependency for [Laravel Liberu](https://github.com/laravel-enso/Liberu).
 
-This package works exclusively within the [Enso](https://github.com/laravel-enso/Enso) ecosystem.
+This package works exclusively within the [Liberu](https://github.com/laravel-enso/Liberu) ecosystem.
 
 For live examples and demos, you may visit [laravel-enso.com](https://www.laravel-enso.com)
 
