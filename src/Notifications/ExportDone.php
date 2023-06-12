@@ -16,8 +16,8 @@ class ExportDone extends Notification implements ShouldQueue
     use Dispatchable, Queueable;
 
     public function __construct(
-        private Export $export,
-        private string $subject
+        private readonly Export $export,
+        private readonly string $subject
     ) {
     }
 

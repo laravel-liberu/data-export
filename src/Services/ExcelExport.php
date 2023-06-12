@@ -29,15 +29,15 @@ class ExcelExport
 {
     private const Extension = 'xlsx';
 
-    private string $savedName;
-    private int $rowLimit;
+    private readonly string $savedName;
+    private readonly int $rowLimit;
     private Writer $writer;
     private int $currentChunk;
     private int $currentSheet;
 
     public function __construct(
-        private Export $export,
-        private ExportsExcel $exporter
+        private readonly Export $export,
+        private readonly ExportsExcel $exporter
     ) {
         $this->savedName = $this->savedName();
         $this->rowLimit = Config::get('enso.exports.rowLimit');

@@ -157,7 +157,7 @@ class Export extends Model implements
             ->onQueue('notifications'));
 
         $count = Collection::wrap($exporter->sheets())
-            ->reduce(fn ($total, $sheet) => $total += count($exporter->rows($sheet)), 0);
+            ->reduce(fn ($total, $sheet) => $total += is_countable($exporter->rows($sheet)) ? count($exporter->rows($sheet)) : 0, 0);
 
         $export->updateProgress($count);
 
