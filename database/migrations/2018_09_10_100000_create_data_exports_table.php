@@ -8,11 +8,11 @@ return new class extends Migration {
     public function up()
     {
         Schema::create('data_exports', function (Blueprint $table) {
-            $table->increments('id');
+            $table->id();
 
-            $table->unsignedBigInteger('file_id')->nullable()->unique();
-            $table->foreign('file_id')->references('id')->on('files')
+            $table->foreignId('file_id')->nullable()->unique()->constrained()->name('data_exports_file_id_foreign');
                 ->onUpdate('restrict')->onDelete('restrict');
+                
 
             $table->string('name')->index();
 
@@ -20,8 +20,7 @@ return new class extends Migration {
             $table->integer('total');
             $table->integer('status')->nullable();
 
-            $table->integer('created_by')->unsigned()->nullable();
-            $table->foreign('created_by')->references('id')->on('users');
+            $table->foreignId('created_by')->nullable()->constrained('users')->index()->name('comments_created_by_foreign');
 
             $table->timestamps();
         });
