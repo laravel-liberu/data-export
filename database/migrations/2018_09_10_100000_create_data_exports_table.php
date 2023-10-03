@@ -10,7 +10,7 @@ return new class extends Migration {
         Schema::create('data_exports', function (Blueprint $table) {
             $table->id();
 
-            $table->foreignId('file_id')->nullable()->unique()->constrained()->name('data_exports_file_id_foreign');
+            $table->foreignId('file_id')->nullable()->unique()->constrained()->name('data_exports_file_id_foreign')
                 ->onUpdate('restrict')->onDelete('restrict');
                 
 
