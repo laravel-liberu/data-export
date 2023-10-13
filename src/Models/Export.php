@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelEnso\DataExport\Models;
+namespace LaravelLiberu\DataExport\Models;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
@@ -11,23 +11,23 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
-use LaravelEnso\DataExport\Contracts\CustomCount;
-use LaravelEnso\DataExport\Contracts\ExportsExcel as AsyncExcel;
-use LaravelEnso\DataExport\Enums\Statuses;
-use LaravelEnso\DataExport\Exceptions\Exception;
-use LaravelEnso\DataExport\Notifications\ExportDone;
-use LaravelEnso\DataExport\Services\ExcelExport as AsyncExporter;
-use LaravelEnso\Excel\Contracts\ExportsExcel as SyncExcel;
-use LaravelEnso\Excel\Services\ExcelExport as SyncExporter;
-use LaravelEnso\Files\Contracts\Attachable;
-use LaravelEnso\Files\Contracts\CascadesFileDeletion;
-use LaravelEnso\Files\Models\File;
-use LaravelEnso\Files\Models\Type;
-use LaravelEnso\Helpers\Services\Decimals;
-use LaravelEnso\IO\Contracts\IOOperation;
-use LaravelEnso\IO\Enums\IOTypes;
-use LaravelEnso\Tables\Notifications\ExportStarted;
-use LaravelEnso\TrackWho\Traits\CreatedBy;
+use LaravelLiberu\DataExport\Contracts\CustomCount;
+use LaravelLiberu\DataExport\Contracts\ExportsExcel as AsyncExcel;
+use LaravelLiberu\DataExport\Enums\Statuses;
+use LaravelLiberu\DataExport\Exceptions\Exception;
+use LaravelLiberu\DataExport\Notifications\ExportDone;
+use LaravelLiberu\DataExport\Services\ExcelExport as AsyncExporter;
+use LaravelLiberu\Excel\Contracts\ExportsExcel as SyncExcel;
+use LaravelLiberu\Excel\Services\ExcelExport as SyncExporter;
+use LaravelLiberu\Files\Contracts\Attachable;
+use LaravelLiberu\Files\Contracts\CascadesFileDeletion;
+use LaravelLiberu\Files\Models\File;
+use LaravelLiberu\Files\Models\Type;
+use LaravelLiberu\Helpers\Services\Decimals;
+use LaravelLiberu\IO\Contracts\IOOperation;
+use LaravelLiberu\IO\Enums\IOTypes;
+use LaravelLiberu\Tables\Notifications\ExportStarted;
+use LaravelLiberu\TrackWho\Traits\CreatedBy;
 use UnexpectedValueException;
 
 class Export extends Model implements

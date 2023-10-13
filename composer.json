@@ -28,16 +28,16 @@
     },
     "autoload": {
         "psr-4": {
-            "LaravelEnso\\DataExport\\": "src/",
-            "LaravelEnso\\DataExport\\Database\\Factories\\": "database/factories/"
+            "LaravelLiberu\\DataExport\\": "src/",
+            "LaravelLiberu\\DataExport\\Database\\Factories\\": "database/factories/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "LaravelEnso\\DataExport\\AppServiceProvider",
-                "LaravelEnso\\DataExport\\AuthServiceProvider",
-                "LaravelEnso\\DataExport\\EnumServiceProvider"
+                "LaravelLiberu\\DataExport\\AppServiceProvider",
+                "LaravelLiberu\\DataExport\\AuthServiceProvider",
+                "LaravelLiberu\\DataExport\\EnumServiceProvider"
             ]
         }
     },

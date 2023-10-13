@@ -1,10 +1,10 @@
 <?php
 
-namespace LaravelEnso\DataExport\Database\Factories;
+namespace LaravelLiberu\DataExport\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use LaravelEnso\DataExport\Enums\Statuses;
-use LaravelEnso\DataExport\Models\Export;
+use LaravelLiberu\DataExport\Enums\Statuses;
+use LaravelLiberu\DataExport\Models\Export;
 
 class ExportFactory extends Factory
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace LaravelEnso\DataExport;
+namespace LaravelLiberu\DataExport;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Support\ServiceProvider;
-use LaravelEnso\DataExport\Commands\Purge;
-use LaravelEnso\DataExport\Models\Export;
-use LaravelEnso\IO\Observers\IOObserver;
+use LaravelLiberu\DataExport\Commands\Purge;
+use LaravelLiberu\DataExport\Models\Export;
+use LaravelLiberu\IO\Observers\IOObserver;
 
 class AppServiceProvider extends ServiceProvider
 {

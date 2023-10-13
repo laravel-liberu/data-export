@@ -1,10 +1,10 @@
 <?php
 
-namespace LaravelEnso\DataExport;
+namespace LaravelLiberu\DataExport;
 
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
-use LaravelEnso\DataExport\Models\Export;
-use LaravelEnso\DataExport\Policies\Policy;
+use LaravelLiberu\DataExport\Models\Export;
+use LaravelLiberu\DataExport\Policies\Policy;
 
 class AuthServiceProvider extends ServiceProvider
 {

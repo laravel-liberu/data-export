@@ -1,10 +1,10 @@
 <?php
 
-namespace LaravelEnso\DataExport\Policies;
+namespace LaravelLiberu\DataExport\Policies;
 
 use Illuminate\Auth\Access\HandlesAuthorization;
-use LaravelEnso\DataExport\Models\Export;
-use LaravelEnso\Users\Models\User;
+use LaravelLiberu\DataExport\Models\Export;
+use LaravelLiberu\Users\Models\User;
 
 class Policy
 {

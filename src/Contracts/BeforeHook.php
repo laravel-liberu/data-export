@@ -1,8 +1,8 @@
 <?php
 
-namespace LaravelEnso\DataExport\Contracts;
+namespace LaravelLiberu\DataExport\Contracts;
 
-use LaravelEnso\DataExport\Models\Export;
+use LaravelLiberu\DataExport\Models\Export;
 
 interface BeforeHook
 {

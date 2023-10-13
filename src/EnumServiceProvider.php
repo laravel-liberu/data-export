@@ -1,9 +1,9 @@
 <?php
 
-namespace LaravelEnso\DataExport;
+namespace LaravelLiberu\DataExport;
 
-use LaravelEnso\DataExport\Enums\Statuses;
-use LaravelEnso\Enums\EnumServiceProvider as ServiceProvider;
+use LaravelLiberu\DataExport\Enums\Statuses;
+use LaravelLiberu\Enums\EnumServiceProvider as ServiceProvider;
 
 class EnumServiceProvider extends ServiceProvider
 {

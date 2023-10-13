@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use LaravelEnso\DataExport\Http\Controllers\Cancel;
+use LaravelLiberu\DataExport\Http\Controllers\Cancel;
 
 Route::middleware(['api', 'auth', 'core'])
     ->prefix('api/export')->as('export.')

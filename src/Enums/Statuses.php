@@ -1,8 +1,8 @@
 <?php
 
-namespace LaravelEnso\DataExport\Enums;
+namespace LaravelLiberu\DataExport\Enums;
 
-use LaravelEnso\Enums\Services\Enum;
+use LaravelLiberu\Enums\Services\Enum;
 
 class Statuses extends Enum
 {

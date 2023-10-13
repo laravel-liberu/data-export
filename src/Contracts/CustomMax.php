@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelEnso\DataExport\Contracts;
+namespace LaravelLiberu\DataExport\Contracts;
 
 interface CustomMax
 {

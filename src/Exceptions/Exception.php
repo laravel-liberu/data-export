@@ -1,8 +1,8 @@
 <?php
 
-namespace LaravelEnso\DataExport\Exceptions;
+namespace LaravelLiberu\DataExport\Exceptions;
 
-use LaravelEnso\Helpers\Exceptions\EnsoException;
+use LaravelLiberu\Helpers\Exceptions\EnsoException;
 
 class Exception extends EnsoException
 {
