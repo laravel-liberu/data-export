@@ -4,7 +4,7 @@
     "keywords": [
         "data-export",
         "laravel-liberu",
-        "enso-exports"
+        "liberu-exports"
     ],
     "homepage": "https://github.com/laravel-liberu/data-export",
     "type": "library",

@@ -205,7 +205,7 @@ class Export extends Model implements
 
     public function scopeExpired(Builder $query): Builder
     {
-        $retainFor = Config::get('enso.exports.retainFor');
+        $retainFor = Config::get('liberu.exports.retainFor');
         $expired = Carbon::today()->subDays($retainFor);
 
         return $query->where('created_at', '<', $expired);

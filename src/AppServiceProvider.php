@@ -24,9 +24,9 @@ class AppServiceProvider extends ServiceProvider
 
         $this->loadRoutesFrom(__DIR__.'/../routes/api.php');
 
-        $this->mergeConfigFrom(__DIR__.'/../config/exports.php', 'enso.exports');
+        $this->mergeConfigFrom(__DIR__.'/../config/exports.php', 'liberu.exports');
 
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'laravel-enso/data-export');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'laravel-liberu/data-export');
 
         return $this;
     }
@@ -34,12 +34,12 @@ class AppServiceProvider extends ServiceProvider
     private function publish()
     {
         $this->publishes([
-            __DIR__.'/../config' => config_path('enso'),
-        ], ['data-export-config', 'enso-config']);
+            __DIR__.'/../config' => config_path('liberu'),
+        ], ['data-export-config', 'liberu-config']);
 
         $this->publishes([
-            __DIR__.'/../resources/views' => resource_path('views/vendor/laravel-enso/data-export'),
-        ], ['data-export-mail', 'enso-mail']);
+            __DIR__.'/../resources/views' => resource_path('views/vendor/laravel-liberu/data-export'),
+        ], ['data-export-mail', 'liberu-mail']);
 
         return $this;
     }
@@ -49,7 +49,7 @@ class AppServiceProvider extends ServiceProvider
         $this->commands(Purge::class);
 
         $this->app->booted(fn () => $this->app->make(Schedule::class)
-            ->command('enso:data-export:purge')->daily());
+            ->command('liberu:data-export:purge')->daily());
 
         return $this;
     }

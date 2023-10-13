@@ -40,7 +40,7 @@ class ExcelExport
         private readonly ExportsExcel $exporter
     ) {
         $this->savedName = $this->savedName();
-        $this->rowLimit = Config::get('enso.exports.rowLimit');
+        $this->rowLimit = Config::get('liberu.exports.rowLimit');
     }
 
     public function handle()

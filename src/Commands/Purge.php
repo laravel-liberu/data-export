@@ -8,7 +8,7 @@ use LaravelLiberu\DataExport\Models\Export;
 
 class Purge extends Command
 {
-    protected $signature = 'enso:data-export:purge';
+    protected $signature = 'liberu:data-export:purge';
 
     protected $description = 'Removes old exports';
 

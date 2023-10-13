@@ -40,7 +40,7 @@ class ExportDone extends Notification implements ShouldQueue
 
         return (new MailMessage())
             ->subject("[ {$appName} ] {$this->subject}")
-            ->markdown('laravel-enso/data-export::emails.export', [
+            ->markdown('laravel-liberu/data-export::emails.export', [
                 'name' => $notifiable->person->appellative(),
                 'export' => $this->export,
             ]);
