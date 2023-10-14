@@ -2,9 +2,9 @@
 
 namespace LaravelLiberu\DataExport\Exceptions;
 
-use LaravelLiberu\Helpers\Exceptions\EnsoException;
+use LaravelLiberu\Helpers\Exceptions\LiberuException;
 
-class Exception extends EnsoException
+class Exception extends LiberuException
 {
     public static function cannotBeCancelled()
     {

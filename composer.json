@@ -1,6 +1,6 @@
 {
     "name": "laravel-liberu/data-export",
-    "description": "Structure for holding Laravel-Enso exports",
+    "description": "Structure for holding Laravel-Liberu exports",
     "keywords": [
         "data-export",
         "laravel-liberu",
